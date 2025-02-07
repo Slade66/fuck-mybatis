@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <mapper namespace="com.slade.dao.UserMapper">
     <select id="findAllUsers" resultType="com.slade.pojo.User">
-        select * from user
+        SELECT * FROM user
     </select>
+    <select id="findUserById" resultType="com.slade.pojo.User" parameterType="java.lang.Integer">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+    <insert id="insertUser" resultType="java.lang.Integer" parameterType="com.slade.pojo.User">
+        INSERT INTO user (username) VALUES (#{username})
+    </insert>
+    <update id="updateUser" resultType="java.lang.Integer" parameterType="com.slade.pojo.User">
+        UPDATE user
+        SET username = #{username}
+        WHERE id = #{id}
+    </update>
+    <delete id="deleteUserById" resultType="java.lang.Integer" parameterType="int">
+        DELETE FROM user WHERE id = #{id}
+    </delete>
 </mapper>

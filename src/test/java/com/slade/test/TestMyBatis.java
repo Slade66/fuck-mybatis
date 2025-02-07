@@ -1,6 +1,7 @@
 package com.slade.test;
 
 import com.slade.dao.UserMapper;
+import com.slade.mybatis.io.Resources;
 import com.slade.pojo.User;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,11 +15,11 @@ public class TestMyBatis {
 
     @Before
     public void init() {
-        String resource = "mybatis-config.xml";
-        InputStream inputStream = Resources.getResourceAsStream(resource);
-        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
-        SqlSession session = sqlSessionFactory.openSession();
-        userMapper = session.getMapper(UserMapper.class);
+//        String resource = "mybatis-config.xml";
+//        InputStream inputStream = Resources.getResourceAsStream(resource);
+//        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+//        SqlSession session = sqlSessionFactory.openSession();
+//        userMapper = session.getMapper(UserMapper.class);
     }
 
     @Test
