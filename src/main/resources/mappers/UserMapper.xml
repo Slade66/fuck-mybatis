@@ -1,0 +1,5 @@
+<mapper namespace="com.slade.dao.UserMapper">
+    <select id="findAllUsers" resultType="com.slade.pojo.User">
+        select * from user
+    </select>
+</mapper>
