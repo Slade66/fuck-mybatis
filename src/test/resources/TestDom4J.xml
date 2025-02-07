@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<teachers>
+    <teacher id="1">
+        <name>桜空もも</name>
+        <age>28</age>
+    </teacher>
+    <teacher id="2">
+        <name>深田えいみ）</name>
+        <age>26</age>
+    </teacher>
+</teachers>
